@@ -1,0 +1,234 @@
+body {
+    background-image: url("basketball-field.jpg");
+    background-size: cover;
+}
+
+/*FONT*/
+@font-face {
+    src: url('CursedTimerULiL.ttf');
+    font-family: 'Cursed Timer ULiL';
+}
+
+/*Main Container*/
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 340px;
+    background: #1B244A;
+    margin: 20px auto;
+    border-radius: 5px;
+    border: 2px solid #EEEEEE;
+    padding: 20px 100px;
+    opacity: 0.9;
+    box-shadow: 0px 0px 200px #F94F6D;
+}
+
+/*1st Child Main Container - Scores & Period*/
+.score-period{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    width: 400px;
+    height: 150px;
+}
+
+/*2nd Child Main Container - Fouls & New Game Button*/
+.fouls {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    height: 130px;
+}
+
+/*Home and Guest Score Title, Count and Buttons, 1st and 3rd children of .scoreboard*/
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;     
+}
+
+.board-title {
+    width: 155px;
+    height: 36px;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    color: #EEEEEE;
+    margin-bottom: 10px;    
+}
+
+/*Count Display for Home and Guest*/
+.score {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 140px;
+    height: 70px;
+    background: #080001;
+    border-radius: 5px;
+    font-family: 'Cursed Timer ULiL';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    color: #F94F6D;  
+    padding-top: 20px;    
+}
+
+/*Set of Buttons*/
+.add-points {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 140px;
+    margin-top: 10px;     
+}
+
+/*Single Button for Points + Hover*/
+.add-btn {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+    background: transparent;
+    color: #EEEEEE;
+    font-family: 'Cursed Timer ULiL';
+}
+
+.add-btn:hover{
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+}
+
+/*Period Counter, 2nd child of .scoreboard*/
+.period-counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.period-title {
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #EEEEEE;
+}
+
+/*Count Display for Period*/
+.period {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 50px;
+    background: black;
+    font-family: 'Cursed Timer ULiL';
+    color: orange;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+/*Single Button for Period + Hover*/
+.period-btn {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+    background: transparent;
+    color: #EEEEEE;
+    font-family: 'Cursed Timer ULiL';
+    margin-top: 10px;
+}
+
+.period-btn:hover{
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+}
+
+
+/*2nd child of .container and fouls and new game button*/
+.fouls-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.fouls-title {
+    margin-bottom: 5px;
+    font-size: 22px;
+    color: #EEEEEE;
+}
+
+/*Fouls Couter Display*/
+.fouls-counter {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 80px;
+    height: 60px;
+    background: black;
+    font-family: 'Cursed Timer ULiL';
+    color: #F94F6D;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+/*Fouls Button Set*/
+.foul-btn-set {
+    display: flex;
+    justify-content: space-around;
+    width: 80px;
+    margin-top: 10px;
+}
+
+/*Single Buttons for Fouls Count*/
+.foul-btn {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+    background: transparent;
+    color: #EEEEEE;
+    font-family: 'Cursed Timer ULiL';
+}
+
+.foul-btn:hover{
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+}
+
+/*New Game Button Box*/
+.new-game-btn {
+    display: flex;
+    align-items: center; 
+}
+
+/*New Game Button and Hover*/
+.game-btn {
+    width: 140px;
+    height: 40px;
+    border: 3px solid #EEEEEE;
+    border-radius: 5px;
+    background: transparent;
+    color: #EEEEEE;
+    font-family: 'Cursed Timer ULiL';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.game-btn:hover{
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+}
